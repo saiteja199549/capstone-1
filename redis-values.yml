@@ -1,0 +1,13 @@
+auth:
+  ## @param auth.enabled Enable password authentication
+  ##
+  enabled: false
+master:
+  persistence:
+    storageClass: standard 
+  resources:
+    limits:
+      cpu: 200m
+      memory: 200Mi
+replica:
+  replicaCount: 0
